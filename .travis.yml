@@ -1,0 +1,15 @@
+sudo: false
+
+language: cpp
+
+before_install:
+  - curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+  - export PATH="$HOME/.pyenv/bin:$PATH"
+  - eval "$(pyenv init -)"
+  - eval "$(pyenv virtualenv-init -)"
+  - pyenv install 3.4.1
+  - pyenv global 3.4.1
+
+script:
+  - python --version
+  - true
