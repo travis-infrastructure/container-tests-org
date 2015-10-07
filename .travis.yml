@@ -1,9 +1,10 @@
-language: ruby
+language: android
 sudo: false
 
-apt:
-  packages:
-    - util-linux
+addons:
+    apt:
+    packages:
+      - util-linux
 
 script:
   - git --version
