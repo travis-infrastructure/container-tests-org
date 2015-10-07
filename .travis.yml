@@ -2,7 +2,7 @@ language: android
 sudo: false
 
 addons:
-    apt:
+  apt:
     packages:
       - util-linux
 
