@@ -1,5 +1,9 @@
 language: ruby
 sudo: false
 
+apt:
+  packages:
+    - util-linux
+
 script:
   - git --version
