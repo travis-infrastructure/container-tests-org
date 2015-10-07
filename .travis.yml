@@ -7,4 +7,5 @@ addons:
       - uuid
 
 script:
-  - uuid
+  - chmod +x try.sh
+  - ./try.sh

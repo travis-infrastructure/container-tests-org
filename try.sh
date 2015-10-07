@@ -1,0 +1,3 @@
+alias uuidgen='uuid'
+
+uuidgen
