@@ -1,11 +1,11 @@
-language: android
+language: node_js
 sudo: false
 
-addons:
-  apt:
-    packages:
-      - uuid
-
+before_install:
+  - curl -O https://raw.githubusercontent.com/yrashk/kerl/master/kerl
+  - chmod +x kerl
+  - ./kerl build 18.1 18.1
+  - ./kerl install 18.1 ~/erlang/18.1
+  - . ~/erlang/18.1/activate
 script:
-  - chmod +x try.sh
-  - ./try.sh
+  - erl -v
