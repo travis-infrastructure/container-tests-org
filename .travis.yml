@@ -1,11 +1,7 @@
-language: node_js
+language: android
 sudo: false
 
 before_install:
-  - curl -O https://raw.githubusercontent.com/yrashk/kerl/master/kerl
-  - chmod +x kerl
-  - ./kerl build 18.1 18.1
-  - ./kerl install 18.1 ~/erlang/18.1
-  - . ~/erlang/18.1/activate
+  - rvm use 2.2 --install --binary --fuzzy
 script:
-  - erl -v
+  - ruby -v
