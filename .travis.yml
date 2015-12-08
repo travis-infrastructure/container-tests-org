@@ -1,6 +1,10 @@
 language: ruby
 sudo: false
 
+install:
+  - sudo apt-get update
+  - sudo apt-get install iputils-ping bind9-host -y
+
 script:
   - host joomla.org
   - nc -z -v joomla.org 80
