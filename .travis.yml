@@ -1,7 +1,8 @@
-language: android
+language: ruby
 sudo: false
 
-before_install:
-  - rvm use 2.2 --install --binary --fuzzy
 script:
-  - ruby -v
+  - host joomla.org
+  - nc -z -v joomla.org 80
+  - curl -v -m 30 http://joomla.org
+
