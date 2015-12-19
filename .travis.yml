@@ -1,8 +1,7 @@
-language: ruby
+language: node_js
 sudo: false
 
 script:
-  - true
-  - nc -z -v joomla.org 80
-  - curl -v -m 30 http://joomla.org
+  - pip install --upgrade pip --user
+
 
