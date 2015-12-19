@@ -1,11 +1,10 @@
 language: python
 sudo: required
 dist: precise
+group: stable
 
 script:
-  - echo "boop"
-  - pip install --upgrade pip --user
-  - echo "bop"
+  - uname -a
   - true
 
 
