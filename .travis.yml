@@ -1,7 +1,7 @@
 language: python
 sudo: required
 dist: precise
-group: stable
+group: edge
 
 script:
   - uname -a
