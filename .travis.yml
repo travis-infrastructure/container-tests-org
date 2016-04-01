@@ -3,10 +3,11 @@ sudo: false
 
 addons:
   apt:
-  - dwdiff
-  - dnsmasq
-  - dnsmasq-base
-  - dnsmasq-utils
+    packages:
+    - dwdiff
+    - dnsmasq
+    - dnsmasq-base
+    - dnsmasq-utils
 
 script:
   - true
