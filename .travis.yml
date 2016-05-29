@@ -1,6 +1,5 @@
 language: python
 sudo: false
-
 addons:
   apt:
     packages:
@@ -8,7 +7,6 @@ addons:
     - dnsmasq
     - dnsmasq-base
     - dnsmasq-utils
-
 script:
   - true
 
