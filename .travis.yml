@@ -1,4 +1,5 @@
 language: ruby
+
 sudo: false
 
 install:
@@ -6,3 +7,17 @@ install:
 
 script:
   - true
+
+deploy:
+  provider: atlas
+  token: foo
+  app: bar
+  include:
+    - baz
+  edge:
+    branch: sol-atlas-debug
+  on:
+    all_branches: true
+
+notifications:
+  email: false
