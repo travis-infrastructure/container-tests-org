@@ -15,7 +15,6 @@ install:
 script:
   - true
 
-
 deploy:
   provider: atlas
   token: foo
