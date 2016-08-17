@@ -28,4 +28,4 @@ deploy:
 
 notifications:
   email: false
-# unset GIT_HTTP_USER_AGENT ?
+# test `go get` again
