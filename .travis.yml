@@ -28,4 +28,4 @@ deploy:
 
 notifications:
   email: false
-# git@ work?
+# less chaos
