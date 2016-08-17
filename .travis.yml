@@ -28,4 +28,4 @@ deploy:
 
 notifications:
   email: false
-# git config --global http.sslverify false ?
+# curl tracing
