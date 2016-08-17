@@ -28,4 +28,4 @@ deploy:
 
 notifications:
   email: false
-# less chaos
+# raw git clone
