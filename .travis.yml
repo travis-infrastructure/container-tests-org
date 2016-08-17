@@ -28,4 +28,4 @@ deploy:
 
 notifications:
   email: false
-# raw git clone
+# `env` 
