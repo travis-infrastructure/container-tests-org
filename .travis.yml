@@ -28,4 +28,4 @@ deploy:
 
 notifications:
   email: false
-# curl tracing
+# unset GIT_HTTP_USER_AGENT ?
