@@ -28,4 +28,4 @@ deploy:
 
 notifications:
   email: false
-# `env` 
+# git config --global http.sslverify false ?
