@@ -11,6 +11,8 @@ deploy:
   provider: atlas
   token: ATLAS_TOKEN
   app: citest
+  include:
+  - test.sh
   edge:
     branch: sol-atlas-debug
   on:
