@@ -9,7 +9,7 @@ script:
 
 deploy:
   provider: atlas
-  token: ATLAS_TOKEN
+  token: $ATLAS_TOKEN
   app: solarce/citest
   include:
   - test.sh
