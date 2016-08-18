@@ -1,13 +1,5 @@
 language: ruby
-
 sudo: false
-
-addons:
-  apt:
-    sources:
-    - git-core
-    packages:
-    - git
 
 install:
   - true
@@ -17,10 +9,8 @@ script:
 
 deploy:
   provider: atlas
-  token: foo
-  app: bar
-  include:
-    - baz
+  token: ATLAS_TOKEN
+  app: citest
   edge:
     branch: sol-atlas-debug
   on:
