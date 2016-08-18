@@ -5,12 +5,12 @@ install:
   - true
 
 script:
-  - true
+  - ./test.sh
 
 deploy:
   provider: atlas
   token: ATLAS_TOKEN
-  app: citest
+  app: solarce/citest
   include:
   - test.sh
   edge:
