@@ -10,9 +10,8 @@ script:
 deploy:
   provider: atlas
   token: $ATLAS_TOKEN
+  vcs: true
   app: solarce/citest
-  include:
-    - "./test.sh"
   edge:
     branch: sol-atlas-debug
   on:
