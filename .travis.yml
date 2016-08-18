@@ -28,4 +28,4 @@ deploy:
 
 notifications:
   email: false
-# test `go get` again
+# re-enable all the atlas stuff
