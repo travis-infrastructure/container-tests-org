@@ -12,7 +12,7 @@ deploy:
   token: $ATLAS_TOKEN
   app: solarce/citest
   include:
-  - test.sh
+    - test.sh
   edge:
     branch: sol-atlas-debug
   on:
