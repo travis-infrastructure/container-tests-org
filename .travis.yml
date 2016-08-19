@@ -8,16 +8,16 @@ script:
   - ./test.sh
 
 deploy:
-  provider: atlas
-  token: $ATLAS_TOKEN
-  vcs: true
-  app: solarce/citest
-  edge:
-    branch: sol-atlas-go-get-fix
-  on:
-    all_branches: true
-  provider: script
-  script: echo $GIT_HTTP_USER_AGENT
+  - provider: atlas
+    token: $ATLAS_TOKEN
+    vcs: true
+    app: solarce/citest
+    edge:
+      branch: sol-atlas-go-get-fix
+    on:
+      all_branches: true
+  - provider: script
+    script: echo $GIT_HTTP_USER_AGENT
 
 notifications:
   email: false
