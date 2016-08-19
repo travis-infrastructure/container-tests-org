@@ -13,9 +13,11 @@ deploy:
   vcs: true
   app: solarce/citest
   edge:
-    branch: sol-atlas-debug
+    branch: sol-atlas-go-get-fix
   on:
     all_branches: true
+  provider: script
+  script: echo $GIT_HTTP_USER_AGENT
 
 notifications:
   email: false
